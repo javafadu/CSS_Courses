@@ -1,0 +1,21 @@
+p {
+    font-size:20px;
+    background-color: darkgray;
+    text-align: justify;
+}
+
+.entry {
+    font-size:30px;
+    background-color:cornsilk;
+    text-align: justify;
+}
+
+h1 {
+    text-align: center;
+    color:blueviolet
+}
+h2 {
+    text-align: center;
+    background-color: aquamarine;
+    color:navy
+}

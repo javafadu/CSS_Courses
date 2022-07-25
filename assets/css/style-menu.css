@@ -1,0 +1,12 @@
+* {
+    text-align: center;
+}
+ul li {
+    background-color: lightgray;
+    width:30%;
+    list-style: none;
+}
+.active {
+    background-color:gray;
+    color: white;
+}
