@@ -1,0 +1,33 @@
+body {
+    background-image: url("../img/resim4.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+section.container {
+    width: 25%;
+}
+.months {
+    background-color:antiquewhite;
+    padding-bottom: 1rem;
+}
+.seasons {
+    background-color:bisque;
+    padding-bottom: 1rem;
+}
+.days {
+    background-color:rgb(75,29,29,0.6);
+    padding-bottom: 1rem;
+}
+h1,h2 {
+    background-color: darkgray;
+    text-align: center;
+    padding: 1rem;
+    
+}
+ol li, ul li {
+    font-size: 1.3rem;
+
+
+}
+
