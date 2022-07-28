@@ -1,0 +1,29 @@
+body {
+    padding:20px;
+}
+.main-box{
+    background-color: rgb(60, 58, 58);
+    padding:20px;
+}
+.main-box h2{
+    color:rgb(248, 244, 244);
+}
+.main-box .sub-box{
+    background-color: rgb(231, 225, 225);
+    padding:10px;
+}
+.main-box .code-box{
+    background-color: rgb(197, 193, 193);
+    padding-top:10px;
+}
+.main-box button {
+    padding:5px 10px;
+    background-color:rgb(6, 148, 6);
+    color:white;
+    border:none;
+    margin-top:10px;
+}
+.main-box a {
+    color:rgb(23, 22, 22);
+    
+}
