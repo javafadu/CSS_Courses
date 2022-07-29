@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peseudo Class</title>
+    <style>
+        a{
+            color:green;
+        }
+        a:visited{
+            font-weight: bold;
+            color:red;
+            text-decoration: none;
+        }
+        a:active {
+            background-color:brown;
+            color:aliceblue;
+        }
+        .form-el{
+            background-color:lightgray;
+        }
+        .form-el:focus{
+            background-color:yellow;
+            outline: 0;
+        }
+        .form-el:checked {
+            outline:3px solid red;
+        }
+        ul li {
+            background-color:aqua;
+            margin:5px;
+        }
+        ul li:first-child {
+            background-color:yellow;
+            margin:5px;
+        }
+        ul li:last-child {
+            background-color:rgb(172, 97, 161);
+            margin:5px;
+        }
+        ul li:nth-child(3) {
+            background-color:rgb(75, 73, 196);
+            margin:5px;
+        }
+        .article::selection {
+            background-color:green;
+            color:white;
+        }
+        ul li::marker{
+            color:purple;
+        }
+        em::before {
+            content: "[";
+            color:red;
+            background-color:aqua;
+        }
+        em::after {
+            content: "]";
+            color:red;
+            background-color:aqua;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+<a href="https://google.com" target="_blank">Click to go to Google</a>
+
+<div>
+    <input type="text" name="" id="" class="form-el">
+</div>
+
+
+<div>
+    <input type="checkbox" name="" id="" class="form-el">
+</div>
+
+<ul>
+    <li>Link1</li>
+    <li>Link2</li>
+    <li>Link3</li>
+    <li>Link4</li>
+    <li>Link5</li>
+    
+</ul>
+
+<p class="article">lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aperiam nobis amet exercitationem non in cumque consequatur magni ducimus. Facilis repellat beatae maiores, obcaecati at odio culpa ullam nihil vitae.Recusandae tenetur ex exercitationem doloremque, quis praesentium nemo, dicta quibusdam mollitia quod modi, nesciunt alias <em>vero perspiciatis assumenda. Blanditiis est assumenda molestias dolores? Esse quam</em> voluptatum, perferendis officiis laborum atque!Perspiciatis suscipit earum illo exercitationem sint esse eum debitis non corrupti repellat, sapiente ipsam dolorem ea inventore quidem neque itaque at quod quaerat. Sunt autem quas dolore aspernatur, nam possimus.Asperiores architecto corporis iste ducimus, sunt quia quod. Odio corporis iste fuga ad unde obcaecati consectetur dicta dolor cum non, optio quae fugit esse. Nobis vitae nulla iste placeat. Obcaecati.In doloremque aperiam ducimus <em>accusantium ad atque dicta maxime obcaecati doloribus ab dignissimos quaerat optio eligendi</em> ut  magnam quos, qui corrupti veritatis saepe hic excepturi est. Laboriosam repellendus voluptas iusto.</p>
+
+
+
+
+<marker>
+
+</body>
+</html>

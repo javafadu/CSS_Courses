@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peseudo Practice 1</title>
+    <style>
+        nav.menu{
+            background-color:orange;
+        }
+        nav.menu ul{
+            margin:0;
+            padding:0;
+            list-style: none;
+            text-align: center;
+        }
+        nav.menu ul li {
+            display: inline-block;
+        }
+        nav.menu ul li::after {
+            content: "|";
+            color:black;
+        }
+        nav.menu ul li:last-child::after {
+            content: "▶️";
+        }
+        nav.menu ul li:first-child::before {
+            content: "◀️";
+        }
+        nav.menu +p{
+            color:red;
+        }
+
+
+
+
+        nav.menu a{
+            padding:5px 10px;
+            display:inline-block;
+            text-decoration: none;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Link1</a></li>
+            <li><a href="#">Link2</a></li>
+            <li><a href="#">Link3</a></li>
+            <li><a href="#">Link4</a></li>
+            <li><a href="#">Link5</a></li>
+            <li><a href="#">Link6</a></li>
+        </ul>
+    </nav>
+    <p>Lorem.</p>
+    <p>Lorem, ipsum.</p>
+    <p>Lorem, ipsum dolor.</p>
+
+</body>
+</html>
