@@ -1,0 +1,17 @@
+Quiz01: 
+1) *
+ 2) h2
+ 3) .section-header
+ 4) .section-header h2
+ 5) body section:nth-child(3)
+ 6) section.top-bar img
+ 7) .top-bar nav a
+ 8) .sosyal-medya > a
+ 9) section > nav li
+10) .top-bar + section
+11) .kutu > img ~ span
+12) .top-bar nav li:first-child() ~ li
+13) .referanslar .kutu:hover img
+14) .hizmetler .kutu > h3::before
+15) .top-bar li:nth-child(3):hover a::after
+16) .top-bar li:first-child():hover + li a::after
