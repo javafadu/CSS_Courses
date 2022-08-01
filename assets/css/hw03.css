@@ -1,0 +1,40 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.menu-list {
+    display: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Mouse Uzerine Gelince */
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.menu-icon::before {
+
+    font: var(--fa-font-solid);
+    content: "\f07a";
+}
+
+.chk:checked+.menu-list {
+    display: block;
+}
