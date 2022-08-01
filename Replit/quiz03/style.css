@@ -1,0 +1,48 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+  margin: 0;
+  padding: 5px 5px;
+}
+
+.menu-list {
+    display: none;
+}
+input[type="checkbox"] {
+            display:none;
+        }
+.menu-list li {
+  list-style-position: outside;
+}
+
+ul {
+    margin: 0;
+    width: 150px;
+    background-color: #bfbfbf;
+    list-style-type: "::";
+  
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Mouse Uzerine Gelince */
+li a:hover {
+    background-color: #3f3f3f;
+    color: #f5f4f4;
+}
+
+.menu .menu-icon::before {
+font: var(--fa-font-solid);
+            content: "\f0c9";
+}
+
+.chk:checked+.menu-list {
+    display: block;
+}
