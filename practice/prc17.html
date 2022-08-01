@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Up Menu</title>
+    <style>
+
+        nav{
+            background-color:aqua;
+            display: inline-block;
+        }
+        nav input{
+            padding:0.3rem 1rem;
+            background-color:brown;
+            border:0;
+            color:white;
+            width:9rem;
+            font-size: 1.2rem;
+        }
+        nav ul{
+            list-style:none;
+            padding:0;
+            margin:0;
+            display:none;
+            
+        }
+        nav ul li{
+            text-align: center;
+            
+        }
+        nav ul li a{
+            text-decoration: none;
+            padding:0.5rem 1rem;
+            background-color: brown;
+            color:white;
+            display:block;
+            font-size: 1.2rem;
+        } 
+        nav:hover ul {
+            display:block;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <input type="button" value="Backend">
+        <ul>
+            <li><a href="#">Java</a></li>
+            <li><a href="#">SQL</a></li>
+            <li><a href="#">Spring MVC</a></li>
+            <li><a href="#">Spring Boot</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

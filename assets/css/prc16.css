@@ -1,0 +1,38 @@
+body{
+    background-color: aliceblue;
+    padding: 2rem 0;
+}
+section.trip {
+    text-align: center;
+}
+section.trip > div {
+    display: inline-block;
+    width:25%;
+    margin-left:1rem;
+    padding: 1rem;
+    border: 10px solid rgb(210, 202, 202,0.52);
+}
+section.trip div div {
+    text-align: left;
+}
+
+
+section.trip div div span:nth-child(1) {
+    font-size:1.5rem;
+    color:rgb(36, 36, 195);
+    font-weight: 700;
+    margin-right: 2rem;
+
+}
+section.trip div div span:nth-child(2) {
+    background-color: rgb(45, 45, 127);
+    color:white;
+    padding:1rem;
+    margin-right:auto;
+    margin-left:1rem;
+}
+section.trip div div span:hover {
+    opacity: 0.6;
+    cursor:pointer;
+
+}
