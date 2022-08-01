@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUTTON GROUP</title>
+    <style>
+        .button-group{
+            display:flex;
+            gap:5px;
+        }
+        
+        .button-group button{
+            background-color:navy;
+            color:aqua;
+            border-radius:5px;
+            padding:5px 10px;
+            border:2px solid aqua;
+        }
+        .button-group button:nth-child(1){
+            border-radius: 15px 0 0 15px;
+        }
+        .button-group button:nth-child(3){
+            border-radius: 0 15px 15px 0;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+<div class="button-group">
+    <button>Cut</button>
+    <button>Copy</button>
+    <button>Paste</button>
+</div>
+
+
+
+</body>
+</html>
