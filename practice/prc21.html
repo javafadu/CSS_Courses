@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox</title>
+    <style>
+        .img1,
+        .img2 {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .img1 label,
+        .img2 label {
+            background-color: blue;
+            color: white;
+            padding: .5rem 1rem;
+            font-size: 1.2rem;
+            cursor: pointer;
+            height: 25px;
+        }
+
+        .img1 input,
+        .img2 input {
+            display: none;
+        }
+
+        .img1 img,
+        .img2 img {
+            display: none;
+        }
+
+        .img1 input:checked+img {
+            display: block;
+        }
+
+        .img2 input:checked+img {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="img1">
+        <label for="img1">Image1</label>
+        <input type="checkbox" name="img1" id="img1">
+        <img src="../assets/img/seyahat1.jpeg" alt="trip1" width="300" height="250">
+    </div>
+    <div class="img2">
+        <label for="img2">Image2</label>
+        <input type="checkbox" name="img2" id="img2">
+        <img src="../assets/img/seyahat2.jpeg" alt="trip2" width="300" height="250">
+    </div>
+
+</body>
+
+</html>

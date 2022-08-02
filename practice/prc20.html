@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+
+        table{
+            width:50%;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        table th{
+            background-color:navy;
+            color:white;
+            text-align: left;
+        }
+        table th, table td{
+            border:1px solid #ddd;
+            padding:0.5rem;
+        }
+        table tbody tr:nth-child(even) {
+            background-color:#EFEFEF;
+        }
+        table tr:hover{
+            background-color:antiquewhite !important;
+            color:red;
+        }
+
+        table tfoot td:nth-child(1) {
+            text-align:right;
+            color:blue;
+            font-size:1.5rem;
+        }
+        table tfoot td:last-child{
+            text-align: left;
+            color:red;
+            font-size:1.5rem;
+        }
+
+
+    </style>
+</head>
+<body>
+   
+    <table>
+        <thead>
+            <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Product1</td>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>10 $</td>
+            </tr>
+            <tr>
+                <td>Product2</td>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>10 $</td>
+            </tr>
+            <tr>
+                <td>Product3</td>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>20 $</td>
+            </tr>
+            <tr>
+                <td>Product4</td>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>10 $</td>
+            </tr>
+            <tr>
+                <td>Product5</td>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>20 $</td>
+            </tr>
+            <tr>
+                <td>Product6</td>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>30 $</td>
+            </tr>
+
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total Price</td>
+                    <td>100 $</td>
+                </tr>
+            </tfoot>
+        </tbody>
+
+    </table>
+
+
+</body>
+</html>
