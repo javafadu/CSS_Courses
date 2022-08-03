@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Left Menu Transition</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        :root {
+            --color1: #eeb439;
+            --color2: #602c44;
+            --color3: #d19fb8;
+        }
+        html {
+            height:100%;
+        }
+        body{
+            margin:0;
+            padding:0;
+            height:100%;
+        }
+        main {
+            padding-left: 50px;
+        }
+        main header{
+            background-color: var(--color3);
+            padding:1rem;
+            font-size:1.5rem;
+        }
+        main section{
+            padding:2rem;
+        }
+
+        nav.left-menu {
+            background-color: var(--color1);
+            width:250px;
+            height:100%;
+            position:absolute;
+            top:0;
+            left:-200px;
+            transition: left 1s;
+        }
+        nav.left-menu .title{
+            padding: 1rem;
+            display: flex;
+            justify-content:space-between;
+            font-size:1.5rem;
+            background-color: var(--color2);
+        }
+        nav.left-menu ul{
+            list-style: none;
+            padding: 0;
+            margin:2rem 0;
+        }
+        nav.left-menu a{
+            text-decoration: none;
+            padding:0.5rem 2rem;
+            display:block;
+            color:var(--color2);
+            position: relative;
+        }
+        nav.left-menu a:hover{
+            background-color: var(--color3);
+            font-weight: bold;
+        }
+        nav.left-menu a:hover::before{
+            font:var(--fa-font-solid);
+            content:"\f054";
+            position: absolute;
+            left: 1rem;
+        }
+        .switch{
+            display:none;
+        }
+        .switch:checked + .left-menu{
+            left:0;
+        }
+
+        nav.left-menu label{
+            cursor:pointer;
+            padding: 0 0.3rem;
+            transition: transform 1s;
+        }
+        .switch:checked + .left-menu label{
+            transform: rotate(180deg)
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <header>ADMIN PANEL</header>
+        <section>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita tempore, architecto optio neque
+            eligendi, in possimus accusantium doloribus facilis atque porro, natus quis veniam voluptas eum tenetur nisi
+            cupiditate minus?</section>
+    </main>
+
+    <input type="checkbox" class="switch" id="switch"/>
+    <nav class="left-menu">
+      <div class="title">
+        Menü <label for="switch"><i class="fa-solid fa-chevron-right"></i></label>
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+
+</body>
+
+</html>
