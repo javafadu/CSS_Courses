@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .surukle{
+          width: 100px;
+          text-align: center;
+          padding:30px;
+          background-color:green;
+          color:yellow;
+      }
+      .surukle:hover{
+          background-color:red;
+          color:aqua;
+          font-weight:bold;
+      }
+      .surukle:hover + .test{
+            margin-left: 500px;
+         
+      }
+      .test {
+        width: 300px;
+        height: 300px;
+        background-color: lightblue;
+        box-shadow: 8px 8px 4px 4px #555;
+        transition: all 1s ease-out 0.2s;
+      }
+      .test:hover{
+          background-color:orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="surukle">Sürükle</div>
+    <div class="test"></div>
+  </body>
+</html>
